@@ -1,0 +1,499 @@
+
+   .navigationbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    opacity: 0.85;
+    z-index: 12; 
+  }
+  .menu_item {
+    display: flex;
+    margin-top: 15px; 
+  }
+  .menu_item a{
+    margin: 9px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px; 
+  }
+  .LOGO img{
+    border-radius: 40px;
+    height:50px;
+    font-size: 20px;
+    margin-left: 10px;  
+  }
+
+  /* ====start showcase=== */
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+.title{
+  position: absolute;
+  color: white;
+  top: 200px;
+  margin-left: 300px;
+}
+.pairagraph{
+  position: absolute;
+  color: white;
+  top: 250px;
+  margin-left: 400px;
+}
+.showcase{
+  width: 100%;
+  height: 70vh;
+  background-color: white;
+  overflow: hidden;
+}
+figure{
+  position: relative;
+  left: 0;
+  width: 400%;
+  animation: vaibhav 15s infinite;
+}
+.showcase_slide{
+  position: relative;
+  width: 25%;
+  float: left;
+}
+.showcase_slide img{
+  width: 100%;
+  height:75vh;
+}
+@keyframes vaibhav{
+  0%{
+      left: 0%;
+
+  }
+  7%{
+      left: 0%;
+
+  }
+  14%{
+      left: -100%;
+  }
+  21%{
+      left: -100%;
+  }
+  28%{
+      left: -200%;
+  }
+  35%{
+      left: -200%;
+  }
+  42%{
+      left: -300%;
+  }
+  49%{
+      left: -300%;
+  }
+  56%{
+      left: -200%;
+  }
+  63%{
+      left: -200%;
+  }
+  70%{
+      left: -100%;
+  }
+  79%{
+      left: -100%;
+  }
+  89%{
+      left: 0%;
+  }
+  100%{
+      left: 0%;
+  }  
+}
+  .showcase_content{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height:100%;
+  }
+  .title{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 100px; 
+  }
+  .pairagraph{
+    position: absolute;
+    margin-right: 10px;
+    font-size: 35px;
+  }
+   /* ====showcase Section End=== */
+
+  /* ====start about section=== */
+
+  .about{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 70px;
+    margin-top: 100px;
+    color: rgb(131, 130, 130);
+    transform: translate(-150%);
+    animation: about 1s ease-in-out forwards;
+  }
+    @keyframes about{
+    100% {
+      transform: translate(0);
+    }
+  }
+  .About_content{
+     position: absolute;
+    font-size: 35px;
+    margin-left: 70px;
+    font-weight: 600;
+    margin-top: 150px;
+    width: 435px;
+    transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+  }
+  @keyframes about-text-animation {
+    100% {
+      transform: translate(0);
+    }
+  }
+  .about_pairagraph{
+    position: absolute;
+    font-size: 25px;
+    width: 480px;
+    color: rgb(139, 132, 132);
+  }
+  .food_image img{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    margin-left: 700px;
+    margin-top: 50px;
+    transform: translateX(150%);
+    animation: about 1s  ease-in-out forwards; 
+  }
+@keyframes about{
+  100%{
+    transform: translate(0);
+  }
+}
+.Types{
+margin-top: 650px;
+margin-left: 490px;
+color: rgb(91, 88, 88);
+font-size: 20px;
+}
+/* ====about section End === */
+
+/* <!-- ===Card section Start=== --> */
+.card_section{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+}
+.Templates{
+  height: 200px;
+  width: 250px;
+  background-color: whitesmoke;
+  position: relative;
+  overflow: hidden;
+}
+#details{
+  background: rgba(52, 52, 51, 0.5);
+  position: absolute;
+  top:-100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  color: rgb(251, 250, 250);
+}
+#details a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  color: white;
+  text-decoration: none;
+  border: solid 1px rgb(25, 220, 67);
+  background-color:green;
+  border-radius: 50px;
+}
+.Templates:hover #details{
+  top: 0%;
+}
+.Templates img{
+  height: 200px;
+  width: 250px;
+}
+.food_menu{
+  margin-left: 510px;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(91, 88, 88);
+}
+/* <!-- ===Card section === End --> */
+
+/* <!-- ===Menu Section Start=== --> */
+.Menu_section{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly; 
+}
+.items {
+  margin: 30px; 
+}
+.items img{
+  height: 200px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  transition: all  .30s;
+  box-shadow: 0 0 20px rgba(235, 224, 65, 0.8);
+}
+.items img:hover{
+  transform: scale(0.8);
+}
+.food_price{ 
+  font-size: 23px;
+  font-weight: 600;
+  color: rgb(14, 110, 14); 
+}
+.cutomer{
+  text-align: center;
+  font-size: 25px;
+  color: rgb(91, 88, 88);
+}
+/* <!-- ===Menu Section === End--> */
+
+/* <!-- ===Feedback section start=== --> */
+.feedback_section{
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 7px;  
+  justify-content: space-evenly;
+}
+.cutomer_image img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.checked{
+  color: orange;
+}
+.cutomer_review{
+  width: 150px;  
+}
+/* <!-- ===Feedback section End=== --> */
+
+/* <!-- ===Form Section Start=== --> */
+#contact {
+  padding: 10px 0  ;
+  background: rgb(226, 226, 226);
+}
+.contact-container {
+  display: flex;
+  background: #fff;
+}
+.contact-img {
+  width: 50%;
+}
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 500px;
+  object-position: center;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+  margin-right: 150px; 
+}
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  color: #444;
+  font-weight: 500;
+}
+.form-container textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  resize: none;
+}
+.form-container h2 {
+  font-size:25px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -70px;
+}
+.btn-primary a {
+  font-size: 20px;
+  color: black;
+  color: white;
+  text-decoration: none;
+  border: solid 1px rgb(13, 233, 60);
+  background-color:green;
+  border-radius: 50px; 
+}
+/* <!-- ===Form Section END=== --> */
+
+/* <!-- ===Footer section start=== --> */
+#footer h2 {
+  text-align: center;
+  font-size: 30px;
+   padding: 25px;
+  width: 95.9%;
+ color: white;
+  background: rgb(65, 65, 65);
+  position: absolute;
+  margin-bottom: 250px;
+}
+#footer{
+  height: 45vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(65, 65, 65);
+  color: white;   
+}
+.heading{
+  margin: 5px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer_details div {
+  margin: 5px; 
+}
+.footer_details div a{
+  color: white;
+  text-decoration: none;
+}
+.social_media div{
+  margin: 5px;
+}
+.social_media div a{
+  color: white;
+  
+}
+/* <!-- ===Footer section END=== --> */
+
+/* <!-- ===Mediaquerry section start=== --> */
+@media screen and (max-width:768px) {
+  .menu_item{
+    display: none;
+  }
+  #input1:checked~.mobileview {
+    left: 0px;
+    transition: left 1s;
+}
+.title{
+  margin-left: 100px;
+  
+}
+.pairagraph{
+  margin-left: 220px;
+}
+.about{
+  font-size: 25px;  
+}
+.About_content{
+ font-size: 20px;
+ width: 250px;
+}
+.about_pairagraph{
+  position: absolute;
+  font-size: 20px;
+  width: 300px;
+  color: rgb(139, 132, 132);
+}
+.food_image img{
+  height: 450px;
+  width: 400px;
+  margin-left: 370px;   
+}
+.Types{
+  margin-left: 350px;
+  }
+  .food_menu{
+    margin-left: 360px;
+  }
+  .Menu_section{
+    margin-left: 20px;
+  }
+  .items img{
+    height: 150px;
+    width: 200px;
+  }
+  .cutomer{
+    text-align: center;
+    font-size: 20px;
+  }
+  .contact-img img {
+    height: 300px;
+    width: 350px;
+  }
+  .form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    margin-left: 10px;
+  }
+  .form-container h2 {
+    font-size: 25px;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+  } 
+  .btn-primary a {
+    font-size: 18px;
+  } 
+}
+.mobileview{
+  position: absolute;
+    top: 70px;
+    left: -400px;
+    height: 500px;
+    width: 180px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.mobileview ul li a {
+  text-decoration: none;
+  color: black;
+}
+.mobileview ul li {
+  list-style-type: none;
+  margin: 15px;
+}
+.bar{
+  position: absolute;
+  color: black;
+  top: 25px;
+  left: 80px;
+  font-size: 25px;
+}
+
+
+  
+
